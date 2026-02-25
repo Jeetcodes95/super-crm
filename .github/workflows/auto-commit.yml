@@ -1,0 +1,37 @@
+name: Auto Commit — Super CRM
+
+on:
+  schedule:
+    # Runs Mon–Fri at 10:30 AM IST (05:00 UTC)
+    - cron: '0 5 * * 1-5'
+    # Saturday optional run at 11:00 AM IST (05:30 UTC)
+    - cron: '30 5 * * 6'
+  workflow_dispatch:    # Manual trigger for testing
+
+jobs:
+  auto-commit:
+    name: Generate and Push Content
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run auto-commit generator
+        run: node scripts/auto-commit.js
+
+      - name: Push changes
+        run: |
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
