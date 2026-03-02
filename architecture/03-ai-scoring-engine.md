@@ -164,3 +164,8 @@ Replace rule engine with a trained gradient boosting model (XGBoost):
 - Feature engineering from CRM event stream
 - Scikit-learn pipeline → ONNX export → serve via FastAPI
 - A/B test rule engine vs ML model per tenant
+
+
+## Updated: 2026-03-02
+
+**Decay tuning:** Adjusted exponential decay rate from 0.02 to 0.018 based on lead lifecycle analysis. Leads with 45-day inactivity now score ~25% higher than before — reduces false "DEAD" classifications for long-cycle B2B deals.
