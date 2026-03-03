@@ -159,3 +159,11 @@
 ---
 
 *Last updated: February 2026*
+
+
+### Week 9 Update (2026-03-03)
+
+- Completed: CSV bulk import via BullMQ batch processing (tested at 5k rows)
+- Completed: RBAC middleware with hierarchical data scoping
+- In progress: LMS course builder API
+- Next: Student enrollment + progress tracking endpoints
