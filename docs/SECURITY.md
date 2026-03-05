@@ -100,3 +100,8 @@ app.use(helmet({
 - GDPR: data export + deletion APIs per user
 - Data residency: region selection at tenant provisioning
 - Audit logs: immutable, tenant-scoped, 365-day retention
+
+
+## Updated: 2026-03-05
+
+**CORS hardening:** Tightened CORS origin whitelist to exact tenant subdomain patterns only. Previously allowed regex match that could have been exploited by crafted subdomain. Switched to explicit allowlist loaded from tenant config at startup.
