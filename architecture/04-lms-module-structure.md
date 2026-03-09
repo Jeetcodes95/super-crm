@@ -152,3 +152,8 @@ function calculateProgress(enrollment: Enrollment, course: Course): number {
 ## Updated: 2026-02-26 (Thu)
 
 **Quiz retry logic:** Added configurable max-attempts per quiz at the course level (default: 3). Attempts beyond max trigger a 24h cooldown per student. Logic handled in enrollment service, not the quiz model.
+
+
+## Updated: 2026-03-09
+
+**Quiz retry logic:** Added configurable max-attempts per quiz at the course level (default: 3). Attempts beyond max trigger a 24h cooldown per student. Logic handled in enrollment service, not the quiz model.
