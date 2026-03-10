@@ -170,3 +170,11 @@
 
 
 > **Note (2026-03-07):** Architecture review session. Identified optimization opportunity in queue concurrency tuning for bulk import jobs. Will implement Monday.
+
+
+### Week 10 Update (2026-03-10)
+
+- Completed: AI scoring engine v1 deployed and connected to lead events
+- Completed: Score decay cron job running nightly
+- In progress: Score history graph component (frontend)
+- Next: Explainable score breakdown API endpoint
