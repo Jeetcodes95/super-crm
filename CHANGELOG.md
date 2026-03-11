@@ -63,3 +63,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and [Sem
 ### Performance
 - BullMQ scoring worker concurrency increased from 8 to 12
 - LMS certificate generation: 1.2s → async (response time 40ms)
+
+
+## [Unreleased] — 2026-03-11
+
+### Changed
+- AI scoring: tuned decay coefficient from 0.02 → 0.018 for B2B lead lifecycle alignment
+- Cache invalidation: migrated from pattern-based KEYS scan to Redis Set tag strategy
+- ECS health check interval reduced to 30s; unhealthy detection now within 90s
+
+### Fixed
+- HRMS: Leave balance sync race condition on concurrent approval events
