@@ -171,3 +171,8 @@ TargetTrackingScaling:
 MinCapacity: 2
 MaxCapacity: 20
 ```
+
+
+## Updated: 2026-03-12 (Thu)
+
+**Cache invalidation pattern update:** Switched from pattern-based Redis key deletion (`KEYS leads:list:*`) to tag-based invalidation using Redis Sets. Eliminates full keyspace scan on write operations — critical improvement at 50k+ key count.
