@@ -74,3 +74,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and [Sem
 
 ### Fixed
 - HRMS: Leave balance sync race condition on concurrent approval events
+
+
+## [Unreleased] — 2026-03-18
+
+### Added
+- LMS: Configurable quiz retry limit per course (default: 3 attempts, 24h cooldown)
+- LMS: Certificate generation moved to async BullMQ job with polling endpoint
+- HRMS: Employee department hierarchy API (/api/v1/hrms/departments/tree)
+
+### Performance
+- BullMQ scoring worker concurrency increased from 8 to 12
+- LMS certificate generation: 1.2s → async (response time 40ms)
