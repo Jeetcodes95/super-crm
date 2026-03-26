@@ -80,3 +80,8 @@ For tenants requiring dedicated infrastructure (Enterprise):
 - Connection pooling per service (min: 5, max: 50 per pod)
 - Tenant-level rate limiting via Redis sliding window
 - Horizontal scaling: stateless API pods behind Nginx load balancer
+
+
+## Updated: 2026-03-26 (Thu)
+
+**Tenant provisioning optimization:** Added pre-warm step for Redis cache on tenant creation. New tenants now have default pipeline stages and permission matrix loaded into cache within 500ms of signup, reducing first-login latency.
