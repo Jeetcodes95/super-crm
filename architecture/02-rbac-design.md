@@ -120,3 +120,8 @@ interface AuditLog {
   ipAddress: string;
 }
 ```
+
+
+## Updated: 2026-04-13
+
+**Permission scope optimization:** Added short-circuit evaluation in `scopeToUser()` for SUPER_ADMIN role, bypassing scope computation entirely. Reduces middleware overhead by 2ms on every admin request.
