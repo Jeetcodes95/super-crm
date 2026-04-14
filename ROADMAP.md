@@ -216,3 +216,11 @@
 - Completed: Score decay cron job running nightly
 - In progress: Score history graph component (frontend)
 - Next: Explainable score breakdown API endpoint
+
+
+### Week 15 Update (2026-04-14)
+
+- Completed: HRMS attendance check-in with geolocation support
+- Completed: Leave management workflow (request → approval → balance update)
+- In progress: Payroll data structure design
+- Next: Employee onboarding → LMS auto-enrollment event bridge
