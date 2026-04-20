@@ -174,3 +174,8 @@ Replace rule engine with a trained gradient boosting model (XGBoost):
 ## Updated: 2026-04-09 (Thu)
 
 **Decay tuning:** Adjusted exponential decay rate from 0.02 to 0.018 based on lead lifecycle analysis. Leads with 45-day inactivity now score ~25% higher than before — reduces false "DEAD" classifications for long-cycle B2B deals.
+
+
+## Updated: 2026-04-20
+
+**Decay tuning:** Adjusted exponential decay rate from 0.02 to 0.018 based on lead lifecycle analysis. Leads with 45-day inactivity now score ~25% higher than before — reduces false "DEAD" classifications for long-cycle B2B deals.
