@@ -170,3 +170,8 @@ Employee created → eventBus.emit('hrms.employee.onboarded')
 ## Updated: 2026-03-16
 
 **Leave balance recalculation:** Moved leave balance computation from synchronous API response to post-approval event. Manager sees approval response in 40ms; balance update happens async within 200ms. Resolves latency spike on high-volume approval days.
+
+
+## Updated: 2026-04-23 (Thu)
+
+**Leave balance recalculation:** Moved leave balance computation from synchronous API response to post-approval event. Manager sees approval response in 40ms; balance update happens async within 200ms. Resolves latency spike on high-volume approval days.
