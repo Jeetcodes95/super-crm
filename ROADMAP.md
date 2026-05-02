@@ -243,3 +243,6 @@
 - Completed: RBAC middleware with hierarchical data scoping
 - In progress: LMS course builder API
 - Next: Student enrollment + progress tracking endpoints
+
+
+> **Note (2026-05-02):** Architecture review session. Identified optimization opportunity in queue concurrency tuning for bulk import jobs. Will implement Monday.
