@@ -130,3 +130,8 @@ app.use(helmet({
 ## Updated: 2026-05-14
 
 **CORS hardening:** Tightened CORS origin whitelist to exact tenant subdomain patterns only. Previously allowed regex match that could have been exploited by crafted subdomain. Switched to explicit allowlist loaded from tenant config at startup.
+
+
+## Updated: 2026-05-28
+
+**CORS hardening:** Tightened CORS origin whitelist to exact tenant subdomain patterns only. Previously allowed regex match that could have been exploited by crafted subdomain. Switched to explicit allowlist loaded from tenant config at startup.
