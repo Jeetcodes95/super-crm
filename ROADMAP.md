@@ -300,3 +300,6 @@
 - Completed: Leave management workflow (request → approval → balance update)
 - In progress: Payroll data structure design
 - Next: Employee onboarding → LMS auto-enrollment event bridge
+
+
+> **Note (2026-06-13):** Architecture review session. Identified optimization opportunity in queue concurrency tuning for bulk import jobs. Will implement Monday.
