@@ -311,3 +311,11 @@
 - Completed: JWT refresh token rotation + Redis blacklist
 - In progress: Lead scoring queue worker (BullMQ integration 80% done)
 - Next: Deal pipeline model and Kanban frontend component
+
+
+### Week 25 Update (2026-06-23)
+
+- Completed: CSV bulk import via BullMQ batch processing (tested at 5k rows)
+- Completed: RBAC middleware with hierarchical data scoping
+- In progress: LMS course builder API
+- Next: Student enrollment + progress tracking endpoints
