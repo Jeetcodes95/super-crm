@@ -95,3 +95,8 @@ For tenants requiring dedicated infrastructure (Enterprise):
 ## Updated: 2026-05-25
 
 **Tenant provisioning optimization:** Added pre-warm step for Redis cache on tenant creation. New tenants now have default pipeline stages and permission matrix loaded into cache within 500ms of signup, reducing first-login latency.
+
+
+## Updated: 2026-07-02 (Thu)
+
+**Tenant provisioning optimization:** Added pre-warm step for Redis cache on tenant creation. New tenants now have default pipeline stages and permission matrix loaded into cache within 500ms of signup, reducing first-login latency.
