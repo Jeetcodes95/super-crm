@@ -379,3 +379,11 @@
 
 
 > **Note (2026-08-08):** Architecture review session. Identified optimization opportunity in queue concurrency tuning for bulk import jobs. Will implement Monday.
+
+
+### Week 32 Update (2026-08-11)
+
+- Completed: Tenant provisioning service with atomic rollback
+- Completed: JWT refresh token rotation + Redis blacklist
+- In progress: Lead scoring queue worker (BullMQ integration 80% done)
+- Next: Deal pipeline model and Kanban frontend component
