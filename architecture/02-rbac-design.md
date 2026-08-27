@@ -140,3 +140,8 @@ interface AuditLog {
 ## Updated: 2026-07-20
 
 **Permission scope optimization:** Added short-circuit evaluation in `scopeToUser()` for SUPER_ADMIN role, bypassing scope computation entirely. Reduces middleware overhead by 2ms on every admin request.
+
+
+## Updated: 2026-08-27 (Thu)
+
+**Permission scope optimization:** Added short-circuit evaluation in `scopeToUser()` for SUPER_ADMIN role, bypassing scope computation entirely. Reduces middleware overhead by 2ms on every admin request.
