@@ -219,3 +219,8 @@ GitHub Secrets        # CI/CD secrets
 ## Updated: 2026-10-12
 
 **Health check configuration:** Added ALB health check on `/api/v1/health` with 30s interval, 5s timeout, and 2 healthy / 3 unhealthy thresholds. ECS tasks removed from rotation within 90s of failure vs previous 300s default.
+
+
+## Updated: 2026-11-19 (Thu)
+
+**Health check configuration:** Added ALB health check on `/api/v1/health` with 30s interval, 5s timeout, and 2 healthy / 3 unhealthy thresholds. ECS tasks removed from rotation within 90s of failure vs previous 300s default.
